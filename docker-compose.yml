@@ -1,0 +1,10 @@
+version: '2'
+services:
+  screeps:
+    build: .
+    ports:
+      - '21025:21025'
+    volumes:
+      - ./data:/data
+    environment:
+      STEAM_WEB_API_KEY: B716F98EABE28B46AC3B2225E5BEAE5D
